@@ -228,4 +228,12 @@
 //     break;
 // }
 
+let input = parseInt(prompt("enter asomehit"))
 
+if (input % 2 === 0) {
+  console.log("Even");
+} else if (input % 2 !== 0) {
+  console.log("odd!!");
+} else {
+  console.log("Error!!");
+}
