@@ -94,15 +94,15 @@ function equalMathOperation() {
 
 import { addContainer } from "./style.js";
 
-// const submit = document.getElementById("button");
-// const second_container = document.getElementById("second_container");
+const submit = document.getElementById("button");
+const second_container = document.getElementById("second_container");
 
 // submit.addEventListener("click", addContainer);
 
-// submit.addEventListener("click", () => {
-//   if (second_container.style.display === "none") {
-//     second_container.style.display = "block";
-//   } else {
-//     second_container.style.display = "none";
-//   }
-// });
+submit.addEventListener("click", () => {
+  if (second_container.style.display === "none") {
+    second_container.style.display = "block";
+  } else {
+    second_container.style.display = "none";
+  }
+});
