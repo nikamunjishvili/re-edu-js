@@ -166,22 +166,22 @@ console.log(biggestNumber(23, 99, 100));
 // // რომელიც წარმოადგენს არითმეტიკულ ოპერატორს ('+', '-', '*', '/').
 // // მოწოდებული ოპერატორის მიხედვით, ფუნქციამ უნდა შეასრულოს შესაბამისი ოპერაცია ორ ნომერზე და დააბრუნოს შედეგი.
 
-function calculator(num1, num2, a) {
-  if (a === "+") {
-    let incrementResult = num1 + num2;
-    return incrementResult;
-  } else if (a === "-") {
-    let incrementResult = num1 - num2;
-    return incrementResult;
-  } else if (a === "*") {
-    let incrementResult = num1 * num2;
-    return incrementResult;
-  } else if (a === "/") {
-    let incrementResult = num1 / num2;
-    return incrementResult;
-  } else {
-    console.log("Number is not found!!");
-  }
-}
+// function calculator(num1, num2, a) {
+//   if (a === "+") {
+//     let incrementResult = num1 + num2;
+//     return incrementResult;
+//   } else if (a === "-") {
+//     let incrementResult = num1 - num2;
+//     return incrementResult;
+//   } else if (a === "*") {
+//     let incrementResult = num1 * num2;
+//     return incrementResult;
+//   } else if (a === "/") {
+//     let incrementResult = num1 / num2;
+//     return incrementResult;
+//   } else {
+//     console.log("Number is not found!!");
+//   }
+// }
 
-console.log(calculator(10, 20, "+"));
+// console.log(calculator(10, 20, "+"));
