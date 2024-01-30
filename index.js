@@ -118,11 +118,11 @@
 // მაგალითად.2,5,7 და აქედან უდიდესი არის 7.
 //დაწერეთ ფუნქციაში ეს ყველაფერი და შემდეგ ამ ფუნქციაში შეამოწმეთ if else დახმარებით!!
 
-const biggestNumber = (a, b, c) => {
-  const maxNum = Math.max(a, b, c);
-  return "მაქსიმალური რიცხვი არის ", maxNum;
-};
-console.log(biggestNumber(23, 99, 100));
+// const biggestNumber = (a, b, c) => {
+//   const maxNum = Math.max(a, b, c);
+//   return "მაქსიმალური რიცხვი არის ", maxNum;
+// };
+// console.log(biggestNumber(23, 99, 100));
 
 // //3)შეიმუშავეთ ფუნქცია სახელწოდებით checkPasswordStrength, რომელიც აფასებს მოცემული პაროლის სიძლიერეს.
 // // პაროლის სიძლიერე განისაზღვრება რამდენიმე კრიტერიუმის საფუძველზე: ის უნდა იყოს მინიმუმ 8 სიმბოლო და მაქსიმუმ 16 სიმბოლო;
@@ -185,3 +185,199 @@ console.log(biggestNumber(23, 99, 100));
 // }
 
 // console.log(calculator(10, 20, "+"));
+
+// const toggle = document.getElementById("toggle");
+
+// toggle.addEventListener('click', () => {
+//     document.body.classList.toggle("dark-theme");
+// });
+
+// let count = 1;
+
+// while (count <= 5) {
+//     console.log(count);
+//     count++;
+
+//   if(count === 5){
+//     break;
+//   }
+// }
+
+// let fruits = ["apple", "banana", "cherry"];
+// let index = 0;
+
+// while (index < fruits.length) {
+//     console.log(fruits[index]);
+//     index++;
+// }
+
+// let isActive = true;
+// let timer = 0;
+
+// while (isActive) {
+//     console.log("Timer: " + timer + " seconds");
+//     timer++;
+
+//     if (timer > 10) {
+//         isActive = false;
+//     }
+// }
+
+//ჩაციკვლა
+
+// let number = 1;
+
+// while (true) {
+//     if (number % 5 === 0) {
+//         console.log("First multiple of 5 found: " + number);
+//         break;
+//     }
+//     number++;
+// }
+
+// let num = 0;
+
+// while (num < 10) {
+//     num++;
+
+//     if (num % 2 === 0) {
+//         continue;
+//     }
+
+//     console.log("Odd number: " + num);
+// }
+
+// const cars = ["Ferrari", "Porche", "Mazda", "Subaru"];
+
+// let i = 0;
+// while (i < cars.length) {
+//   console.log(cars[i]);
+//   i++;
+// }
+
+// let i = 9;
+
+// do{
+//   console.log("Hello World");
+// }
+// while(i < 10);
+
+// const cars = ["Ferrari", "Porche", "Mazda", "Subaru"];
+
+// for(const car of cars){
+//   if(car == "Porche") continue;
+//   console.log(car)
+// }
+
+// const cars = [`Ferrari`, `Porsche`, `BMW`, `Subaru`];
+// //                0          1        2        3
+// cars.forEach((car, index, array) => {
+//     console.log(`Car name is - ${car}, index is - ${index}`);
+//     console.log(array);
+// });
+
+// const numbers = [1, 2, 3, 4, 5];
+// const doubledNumbers = [];
+
+// numbers.forEach(function (number) {
+//   doubledNumbers.push(number * 2);
+// });
+
+// console.log(doubledNumbers);
+
+// let userInput;
+// const targetValue = 'exit';
+
+// do {
+//   userInput = prompt('Enter a value (type "exit" to quit):');
+//   console.log('You entered: ' + userInput);
+// } while (userInput !== targetValue);
+
+// const numbers = [10, 20, 30, 40, 50];
+// let sum = 0;
+
+// numbers.forEach(function (number) {
+//   sum += number;
+// });
+
+// console.log(`The sum of numbers is: ${sum}`);
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const evenNumbers = [];
+
+// numbers.forEach(function (number) {
+//   if (number % 2 === 0) {
+//     evenNumbers.push(number);
+//   }
+// });
+
+// console.log(`Even numbers in the array: ${evenNumbers}`);
+
+// const words = ["hello", "world", "javascript"];
+// const capitalizedWords = [];
+
+// words.forEach(function (word) {
+//   const capitalizedWord = word.charAt(0).toUpperCase() + word.slice(1);
+//   capitalizedWords.push(capitalizedWord);
+// });
+
+// console.log(capitalizedWords);
+
+//1)
+// let count = 1;
+
+// do {
+//   console.log("count:", count);
+//   count++;
+// } while (count <= 10);
+
+//2)
+const arraynum = [1, 2, 3, 4, 5];
+const doubleNum = [];
+
+arraynum.forEach((sum) => {
+  doubleNum.push(sum * 2);
+});
+
+// console.log(doubleNum);
+
+//3)
+
+// let userInput;
+// const targetValue = "exit";
+
+// do{
+//   userInput = prompt("enter valid type<exit>");
+// }
+// while(userInput !== targetValue)
+
+//4)
+// const numbers = [10, 20, 30, 40, 50];
+// let sum = 0;
+
+// numbers.forEach(number => {
+//   sum += number;
+// })
+
+// console.log(sum);
+
+//5)
+
+// let newArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const evenNumbers = [];
+// newArr.forEach(number => {
+//   if(number % 2 === 0){
+//     evenNumbers.push(number);
+//   }
+// })
+// console.log(evenNumbers);
+
+//6)
+// const array = ["hello", "world", "javascript"];
+// const capitalizedWords = [];
+
+// array.forEach((word) => {
+//   capitalizedWords.push(word.charAt(0).toUpperCase() + word.slice(1));
+// });
+
+// console.log(capitalizedWords);
