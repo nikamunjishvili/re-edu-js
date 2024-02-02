@@ -1,16 +1,34 @@
-  1)დაითვალეთ ერთიდან ათამდე do-while ციკლის გამოყენებით და ბოლოს break;
+reduce
+map,
+filter
 
-  2)forEach ციკლის გამოყენებით რიცხვების მასივზე უნდა მივიღოთ გაორმაგებული მნიშვნელობები მაგალითად თუ გვაქვს [1,2,3,4, 5]
-  -> [2,4,6,8,10]:
+1)დავწეროთ function რომლის მიხედვითაც გადავურბენთ product მასივს map მეთოდით და id მიხედვით განვაახლებ category.მაგალითად Electronics;
+
+function updateProductCategory(productId, newCategory) {
+  return products.map((product) => {
+    if (product.id === productId) {
+      return { ...product, category: newCategory };
+    } else {
+      return product;
+    }
+  });
+}
+
+2)reduce data; დავაჯამოთ price
+
+// const products = [
+//   { name: "Laptop", price: 999.99, category: "Electronics" },
+//   { name: "Coffee Maker", price: 49.99, category: "Kitchen Appliances" },
+//   { name: "Running Shoes", price: 89.99, category: "Sportswear" },
+//   { name: "Bluetooth Headphones", price: 199.99, category: "Electronics" },
+//   { name: "Novel - 'The Great Gatsby'", price: 15.99, category: "Books" },
+// ];
 
 
-3)do while ციკლის დახმარებით მინდა დავწერო ლოგიკა სადაც მექნება prompt და სანამ ამ prompt არ შევიყვან სიტყვა exit მანამ
-არ უნდა მქონდეს გათიშვის საშუალება რაც არ უნდა ჩავწერო.
-
-4)გვაქვს მასივი [10, 20, 30, 40, 50] და ამ მასივის მიხედვით forEach დახმარებით უნდა მივიღო ამ მასივში შეყვანილი რიცხვების ჯამი მაგალითად 150;
-
-
-5)გვაქვს მასივი [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] და მინდა რომ forEach დახმარებით მხოლოდ ლუწი რიცხვები გამოვპრინტო კონსოლში;
-
-6)გვაქვს მასივი ["hello", "world", "javascript"] და მინდა რომ დავაბრუნო ასეთი ვიზუალით ["Hello", "World", "Javascript"]
-გამოიყენეთ string მეთოდები: charAt, toUpperCase, slice
+3)წამოვიღოთ დატა : const products = [
+  { name: "Laptop", price: 999.99, category: "Electronics" },
+  { name: "Coffee Maker", price: 49.99, category: "Books" },
+  { name: "Running Shoes", price: 89.99, category: "Books" },
+  { name: "Bluetooth Headphones", price: 199.99, category: "Electronics" },
+  { name: "Novel - 'The Great Gatsby'", price: 15.99, category: "Books" },
+];
