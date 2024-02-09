@@ -108,7 +108,7 @@ function thirdPromise() {
   });
 }
 
-Promise.all([firstPromise(), secondPromise(), thirdPromise()])
+Promise.allSettled([firstPromise(), secondPromise(), thirdPromise()])
   .then((response) => {
     console.log(response);
   })
