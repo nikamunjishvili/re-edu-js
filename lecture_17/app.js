@@ -120,29 +120,29 @@
 
 // console.log(randomNumber);
 
-const students = [
-  { id: 1, name: "george", sallary: 100, age: 16 },
-  { id: 2, name: "nika", sallary: 300, age: 19 },
-  { id: 3, name: "saba", sallary: 0, age: 14 },
-  { id: 4, name: "david", sallary: 150, age: 22 },
-  { id: 5, name: "luka", sallary: 0, age: 27 },
-];
+// const students = [
+//   { id: 1, name: "george", sallary: 100, age: 16 },
+//   { id: 2, name: "nika", sallary: 300, age: 19 },
+//   { id: 3, name: "saba", sallary: 0, age: 14 },
+//   { id: 4, name: "david", sallary: 150, age: 22 },
+//   { id: 5, name: "luka", sallary: 0, age: 27 },
+// ];
 
-const result = students.reduce(
-  (res, item) => {
-    if (item.age >= 18) {
-      res.adult++;
-    } else {
-      res.teen++;
-    }
+// const result = students.reduce(
+//   (res, item) => {
+//     if (item.age >= 18) {
+//       res.adult++;
+//     } else {
+//       res.teen++;
+//     }
     
-    if (item.sallary === 0) {
-      res.unemployed++;
-    }
+//     if (item.sallary === 0) {
+//       res.unemployed++;
+//     }
 
-    return res;
-  },
-  { teen: 0, adult: 0, unemployed: 0 }
-);
+//     return res;
+//   },
+//   { teen: 0, adult: 0, unemployed: 0 }
+// );
 
-console.log(result);
+// console.log(result);
