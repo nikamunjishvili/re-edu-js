@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #username_error {
+      color: red;
+      font-size: 15px;
+      letter-spacing: 1px;
+      display: none;
+    }
+    #email_error {
+      color: red;
+      font-size: 15px;
+      letter-spacing: 1px;
+      display: none;
+    }
+    #password_error {
+      color: red;
+      font-size: 15px;
+      letter-spacing: 1px;
+      display: none;
+    }
+  </style>
+  <body>
+  <form>
+    <input type="text" id="username" required placeholder="enter username..." />
+    <p id="username_error">username is required!!</p>
+    <input type="email" id="email" required placeholder="enter email..." />
+    <p id="email_error">plz enter valid email!!</p>
+    <input type="type" id="password" required placeholder="enter password..." />
+    <p id="password_error">password is incorrect and not valid!!</p>
+    <button type="submit" id="submit">register</button>
+  </form>
+    <script src="./app.js"></script>
+  </body>
+</html>
