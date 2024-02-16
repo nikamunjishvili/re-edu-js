@@ -7,3 +7,8 @@
 7)async/await
 8)fetch api -->
 
+
+higher order functions
+Object.entries();
+Object.keys();
+Object.values()

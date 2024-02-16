@@ -175,30 +175,30 @@ const age = "15";
 //   }
 // });
 
-// const username = document.getElementById("username");
-// const password = document.getElementById("password");
-// const submit = document.getElementById("submit");
+const username = document.getElementById("username");
+const password = document.getElementById("password");
+const submit = document.getElementById("submit");
 
-// submit.disabled = true;
+submit.disabled = true;
 
-// function validateForm(event) {
-//   event.preventDefault();
-//   const usernameRegex = /^[a-zA-Z0-9._]{3,15}$/;
-//   const passwordRegex =
-//     /^(?=.*[a-z].*[a-z])(?=.*[A-Z].*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$/;
+function validateForm(event) {
+  event.preventDefault();
+  const usernameRegex = /^[a-zA-Z0-9._]{3,15}$/;
+  const passwordRegex =
+    /^(?=.*[a-z].*[a-z])(?=.*[A-Z].*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$/;
 
-//   const isValidUserName = usernameRegex.test(username.value);
-//   const isValidPassword = passwordRegex.test(password.value);
+  const isValidUserName = usernameRegex.test(username.value);
+  const isValidPassword = passwordRegex.test(password.value);
 
-//   document.getElementById("username_error").style.display = isValidUserName
-//     ? "none"
-//     : "block";
-//   document.getElementById("password_error").style.display = isValidPassword
-//     ? "none"
-//     : "block";
+  document.getElementById("username_error").style.display = isValidUserName
+    ? "none"
+    : "block";
+  document.getElementById("password_error").style.display = isValidPassword
+    ? "none"
+    : "block";
 
-//   submit.disabled = !(isValidUserName && isValidPassword);
-// }
+  submit.disabled = !(isValidUserName && isValidPassword);
+}
 
-// username.addEventListener("input", validateForm);
-// password.addEventListener("input", validateForm);
+username.addEventListener("input", validateForm);
+password.addEventListener("input", validateForm);
