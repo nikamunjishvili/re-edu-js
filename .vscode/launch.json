@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "http://flatDeep",
+            "request": "launch",
+            "url": "http://flatDeep"
+        }
+    ]
+}
